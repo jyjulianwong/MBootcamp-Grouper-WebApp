@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MBootcamp-Grouper-Client/static/css/main.e6c13ad2.css",
+    "main.js": "/MBootcamp-Grouper-Client/static/js/main.4c5ba91f.js",
+    "static/js/787.f874a373.chunk.js": "/MBootcamp-Grouper-Client/static/js/787.f874a373.chunk.js",
+    "index.html": "/MBootcamp-Grouper-Client/index.html",
+    "main.e6c13ad2.css.map": "/MBootcamp-Grouper-Client/static/css/main.e6c13ad2.css.map",
+    "main.4c5ba91f.js.map": "/MBootcamp-Grouper-Client/static/js/main.4c5ba91f.js.map",
+    "787.f874a373.chunk.js.map": "/MBootcamp-Grouper-Client/static/js/787.f874a373.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4c5ba91f.js"
+  ]
+}

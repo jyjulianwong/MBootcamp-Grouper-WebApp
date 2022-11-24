@@ -41,6 +41,7 @@ diff_group,joseph,squiz
   const [textArea3, setTextArea3] = useState("");
   const [configFile, setConfigFile] = useState(null);
   const [result, setResult] = useState([]);
+  const [statistics, setStatistics] = useState("");
 
   const sendCalcRequest = (configData) => {
     const dataTranslator = new DataTranslator(configData);
@@ -56,6 +57,7 @@ diff_group,joseph,squiz
       .post("http://mbootcamp-grouper-server-env.eba-dqkgzebf.eu-west-2.elasticbeanstalk.com/grouper", data, config)
       .then((response) => {
         setResult(response["data"]["combinations"]);
+        setStatistics(response["data"]["statistics"]);
       })
   }
 
@@ -169,6 +171,10 @@ diff_group,joseph,squiz
               );
             })
           }
+          <div className={"bg-info my-1 py-3"}>
+            <p><b>STATISTICS</b></p>
+            <p>{statistics}</p>
+          </div>
         </div>
         <div className={"row my-5"}>
           <hr/>

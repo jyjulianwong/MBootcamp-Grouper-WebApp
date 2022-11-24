@@ -1,6 +1,7 @@
-import DataTranslator from "./models/dataTranslator";
 import axios from 'axios';
 import {useState} from "react";
+import "./App.css";
+import DataTranslator from "./models/dataTranslator";
 
 function App() {
   const placeholder1 = `Enter the number of groups you would like to have...
@@ -39,7 +40,7 @@ diff_group,joseph,squiz
   const [textArea2, setTextArea2] = useState("");
   const [textArea3, setTextArea3] = useState("");
   const [configFile, setConfigFile] = useState(null);
-  const [res, setRes] = useState("");
+  const [result, setResult] = useState([]);
 
   const sendCalcRequest = (configData) => {
     const dataTranslator = new DataTranslator(configData);
@@ -54,7 +55,7 @@ diff_group,joseph,squiz
     axios
       .post("http://mbootcamp-grouper-server-env.eba-dqkgzebf.eu-west-2.elasticbeanstalk.com/grouper", data, config)
       .then((response) => {
-        setRes(JSON.stringify(response["data"]["combinations"]));
+        setResult(response["data"]["combinations"]);
       })
   }
 
@@ -105,6 +106,7 @@ diff_group,joseph,squiz
               width={255}
               height={100}
             />
+            <hr/>
           </div>
         </div>
         <div className={"row my-3 g-3"}>
@@ -120,7 +122,8 @@ diff_group,joseph,squiz
           </div>
           <div className={"col-xs-12 col-lg-4"}>
             <textarea
-              className={"w-100"} rows={15}
+              className={"w-100"}
+              rows={15}
               placeholder={placeholder2}
               onChange={onTextArea2Change}
             >
@@ -147,11 +150,31 @@ diff_group,joseph,squiz
           <button onClick={onSubmit}>Calculate!</button>
         </div>
         <div className={"row my-3"}>
-          <p>MBootcamp Grouper (Server): {res}</p>
+          {
+            result.map((combo, comboIdx) => {
+              return (
+                <div className={"bg-info my-1 py-3"}>
+                  <p><b>COMBINATION {comboIdx + 1}</b></p>
+                  {
+                    combo.map((group, groupIdx) => {
+                      return (
+                        <div>
+                          <p>Group {groupIdx + 1}</p>
+                          <p>{group.toString()}</p>
+                        </div>
+                      )
+                    })
+                  }
+                </div>
+              );
+            })
+          }
         </div>
         <div className={"row my-5"}>
           <hr/>
-          <p>Authored by Julian Wong in 2022. I need a UX designer. Please send help.</p>
+          Authored by Julian Wong in 2022.
+          <br/>
+          I need a UX designer. Please send help.
         </div>
       </div>
     </div>

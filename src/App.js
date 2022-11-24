@@ -54,7 +54,7 @@ diff_group,joseph,squiz
       }
     }
     axios
-      .post("http://mbootcamp-grouper-server-env.eba-dqkgzebf.eu-west-2.elasticbeanstalk.com/grouper", data, config)
+      .post("https://mbootcamp-grouper-server-env.eba-dqkgzebf.eu-west-2.elasticbeanstalk.com/grouper", data, config)
       .then((response) => {
         setResult(response["data"]["combinations"]);
         setStatistics(response["data"]["statistics"]);

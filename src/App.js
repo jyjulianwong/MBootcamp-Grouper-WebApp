@@ -171,13 +171,27 @@ diff_group,joseph,squiz
               );
             })
           }
-          <div className={"bg-info my-1 py-3"}>
-            <p><b>STATISTICS</b></p>
-            <p>{statistics}</p>
-          </div>
+          {
+            statistics !== "" && (
+              <div className={"bg-info my-1 py-3"}>
+                <p><b>STATISTICS</b></p>
+                <p>{statistics}</p>
+              </div>
+            )
+          }
+          {
+            statistics === "" && (
+              <div className={"bg-light my-1 py-3 text-center"}>
+                <p>See your ideal group combinations here...</p>
+              </div>
+            )
+          }
         </div>
         <div className={"row my-5"}>
           <hr/>
+          jyjulianwong.github.io/MBootcamp-Grouper-Client
+          v{process.env.REACT_APP_VERSION}
+          <br/>
           Authored by Julian Wong in 2022.
           <br/>
           I need a UX designer. Please send help.

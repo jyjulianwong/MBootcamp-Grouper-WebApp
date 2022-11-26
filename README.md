@@ -1,4 +1,4 @@
-# MBootcamp Grouper (Server)
+# MBootcamp Grouper (Client)
 A group allocation tool made for The Mockingbird's MBootcamp event.
 
 ## What is MBootcamp Grouper?

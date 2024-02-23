@@ -189,10 +189,10 @@ diff_group,joseph,squiz
         </div>
         <div className={"row my-5"}>
           <hr/>
-          jyjulianwong.github.io/MBootcamp-Grouper-Client
+          jyjulianwong.github.io/MBootcamp-Grouper-WebApp
           v{process.env.REACT_APP_VERSION}
           <br/>
-          Authored by Julian Wong in 2022.
+          Authored by Julian Wong in 2024.
           <br/>
           I need a UX designer. Please send help.
         </div>

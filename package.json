@@ -1,6 +1,6 @@
 {
   "name": "mbootcamp-grouper-webapp",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "homepage": "https://jyjulianwong.github.io/MBootcamp-Grouper-WebApp/",
   "private": true,
   "dependencies": {

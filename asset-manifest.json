@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MBootcamp-Grouper-Client/static/css/main.9519d504.css",
-    "main.js": "/MBootcamp-Grouper-Client/static/js/main.9504ea9f.js",
-    "static/js/787.f874a373.chunk.js": "/MBootcamp-Grouper-Client/static/js/787.f874a373.chunk.js",
-    "static/media/themockingbird.png": "/MBootcamp-Grouper-Client/static/media/themockingbird.4c0948cc7e5d444ab4d6.png",
-    "index.html": "/MBootcamp-Grouper-Client/index.html",
-    "main.9519d504.css.map": "/MBootcamp-Grouper-Client/static/css/main.9519d504.css.map",
-    "main.9504ea9f.js.map": "/MBootcamp-Grouper-Client/static/js/main.9504ea9f.js.map",
-    "787.f874a373.chunk.js.map": "/MBootcamp-Grouper-Client/static/js/787.f874a373.chunk.js.map"
+    "main.css": "/MBootcamp-Grouper-WebApp/static/css/main.9519d504.css",
+    "main.js": "/MBootcamp-Grouper-WebApp/static/js/main.585511b3.js",
+    "static/js/787.18ab3ed6.chunk.js": "/MBootcamp-Grouper-WebApp/static/js/787.18ab3ed6.chunk.js",
+    "static/media/themockingbird.png": "/MBootcamp-Grouper-WebApp/static/media/themockingbird.4c0948cc7e5d444ab4d6.png",
+    "index.html": "/MBootcamp-Grouper-WebApp/index.html",
+    "main.9519d504.css.map": "/MBootcamp-Grouper-WebApp/static/css/main.9519d504.css.map",
+    "main.585511b3.js.map": "/MBootcamp-Grouper-WebApp/static/js/main.585511b3.js.map",
+    "787.18ab3ed6.chunk.js.map": "/MBootcamp-Grouper-WebApp/static/js/787.18ab3ed6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9519d504.css",
-    "static/js/main.9504ea9f.js"
+    "static/js/main.585511b3.js"
   ]
 }
